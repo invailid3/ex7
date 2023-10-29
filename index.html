@@ -3,53 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carousel</title>
+    <script src="splide/splide.min.js" defer></script>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="splide/splide.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="calc">
-        <div id="calc-head">
-            <h1>Calculator</h1>
-        </div>
-        <div id="calc-body">
-            <div id="calc-input">
-                <div id="calc-input-fields">
-                    <div id="product-type">
-                        <label><input type="radio" name="prodType" value="type1">Audi</label>
-                        <label><input type="radio" name="prodType" value="type2">Porsche </label>
-                        <label><input type="radio" name="prodType" value="type3">BMW</label>
-                    </div>
-                    <div id="calc-quantity">
-                        <input id="quantity" type="text">
-                    </div>
-                    <div id="calc-subproduct">
-                        <div id="calc-subproduct-select">
-                            <select id="calc-subproduct-select-outter" disabled style="opacity: 0;">
-                                <option value=""> Select good </option>
-                                <option value="1">Basic equipment</option>
-                                <option value="2">Advanced equipment</option>
-                                <option value="3">Luxury equipment</option>
-                            </select>
-                        </div>
-                        <div id="checkboxes" disabled style="opacity: 0;">
-                            <label><input type="checkbox" name="prop1">Insurance</label>
-                            <label><input type="checkbox" name="prop2">Warranty</label>
-                        </div>
-                    </div>
+    <div id="content">
+        <div id="carousel">
+            <section class="splide" aria-label="Image Carousel">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                                <img src="/images/pic1.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="/images/pic2.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="/images/pic3.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="/images/pic4.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="/images/pic5.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="/images/pic6.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="/images/pic7.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="/images/pic8.jpg" alt="">
+                        </li>
+                    </ul>
                 </div>
-                <div id="calc-button-outter">
-                    <button id="calc-butt"> Calculate </button>
-                </div>
-            </div>
-            <div id="calc-result">
-                <output id="calc-out">Result:</output>
-            </div>
+            </section>
         </div>
-
     </div>
-
 </body>
-
 </html>
